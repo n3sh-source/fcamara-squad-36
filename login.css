@@ -1,0 +1,37 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    height: 60px;
+    width: 220px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.form{
+    display: inline-block;
+}
+
+.senha{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#botao{
+    cursor: pointer;
+    background-color: #FE4400;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    width: 175px;
+    text-align: center;
+    color: white;
+}
