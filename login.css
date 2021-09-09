@@ -1,37 +1,100 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+:root {
+  --primary-color: #FE4400;
+  --bg-color: #FE4400;
+  --text-color: #000000;
+  --light-color: rgba(255, 255, 255, 0.04);
 }
 
-.container{
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #130f0d;
+  color: #FE4400;
 }
 
 img{
-    height: 60px;
-    width: 220px;
+    height: 100px;
+    width: 360px;
     margin-bottom: 20px;
-    margin-top: 200px;
-}
-
-.form{
-    display: inline-block;
-}
-
-.senha{
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-#botao{
-    cursor: pointer;
-    background-color: #FE4400;
-    border: none;
-    padding: 5px;
-    border-radius: 4px;
-    width: 175px;
-    text-align: center;
-    color: white;
+form {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  margin: 32px auto;
+  padding: 32px 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.input {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+input,
+button {
+  /* reseta aparencia padrão do navegador */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* box */
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: transparent;
+  outline: none;
+
+
+  /* texto */
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+button {
+  margin-top: 16px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+input ~ label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  color: #000000;
+  transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.input span.error {
+  display: flex;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+  border: 1px solid red;
+  padding: 0.4em;
 }
