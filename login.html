@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
-    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCamara</title>
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+
+
 </head>
+
 <body>
-    <script src="login.js"></script>
-    <main class="container">
-        <img src="Logotipo-FCamara.png">
-        <form action="">
-            <div class="email">
-                <input type="email" name="" id="input-email" placeholder="E-mail">
-            </div>
+  <form action="">
+    <img src="Logotipo-FCamara.png">
+    <div class="input">
+      <input required type="email" />
+      <label>Email</label>
+      <span class="erro"></span>
+    </div>
 
-            <div class="senha">
-                <input type="password" name="" id="input-senha" placeholder="Senha">
-            </div>
+    <div class="input">
+      <input required type="password" />
+      <label>Senha</label>
+      <span class="erro"></span>
+    </div>
 
-            <input type="submit" value="Login" id="botao">
-        </form>
-    </main>
+    <button type="submit">Login</button>
+  </form>
+
+  <script src= login.js defer></script>
+
 </body>
 </html>
