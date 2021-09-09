@@ -11,5 +11,6 @@ const ConsultorSchema = new mongoose.Schema({
     unique: true,
   },
   reservas: [{ ref: "Reserva", type: mongoose.Types.ObjectId, required: true }],
+  filial: { ref: "Filial", type: mongoose.Types.ObjectId, required: true },
 });
 mongoose.model("Consultor", ConsultorSchema);

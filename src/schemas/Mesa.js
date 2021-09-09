@@ -8,7 +8,10 @@ const MesaSchema = new mongoose.Schema({
   },
   vagas: {
     type: Number,
-    required: true,
+    default: 4 
   },
+  filial: { ref: "Filial", type: mongoose.Types.ObjectId, required: true },
+  
 });
 mongoose.model("Mesa", MesaSchema);
+
