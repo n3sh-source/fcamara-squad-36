@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCamara</title>
 
-    <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/font/Metropolis-Black.otf">
 </head>
 
 <body>
-  <form action="">
-    <img src="Logotipo-FCamara.png">
-    <div class="input">
-      <input required type="email" />
-      <label>Email</label>
-      <span class="erro"></span>
+  
+  <div class= 'container'>
+    <div class= 'card'>
+      
+      <img src="img/logo-od-laranja.png">
+        
+      <div class='label-float'>
+        <input type='email' id='e-mail' paceholder=''>
+        <label for='e-mail'> E-Mail </label>
+      </div>
+      
+      <div class='label-float'>
+        <input type='password' id='senha' paceholder=''>
+        <label for='senha'> Senha </label>
+      </div>
+      
+      <div class='justify-center'>
+        <button>Login</button>
+      </div>
+          
     </div>
-
-    <div class="input">
-      <input required type="password" />
-      <label>Senha</label>
-      <span class="error"></span>
-    </div>
-
-    <button type="submit">Login</button>
-  </form>
-
-  <script src= login.js defer></script>
+  </div>
 
 </body>
 </html>
