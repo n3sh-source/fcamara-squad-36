@@ -11,6 +11,9 @@ const ReservaSchema = new mongoose.Schema({
     type: Date,
     required: true,
   },
+  deleted: {
+    type: Boolean,
+    default: false,
+  },
 });
 mongoose.model("Reserva", ReservaSchema);
-

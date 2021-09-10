@@ -12,5 +12,9 @@ const ConsultorSchema = new mongoose.Schema({
   },
   reservas: [{ ref: "Reserva", type: mongoose.Types.ObjectId, required: true }],
   filial: { ref: "Filial", type: mongoose.Types.ObjectId, required: true },
+  deleted: {
+    type: Boolean,
+    default: false,
+  },
 });
 mongoose.model("Consultor", ConsultorSchema);

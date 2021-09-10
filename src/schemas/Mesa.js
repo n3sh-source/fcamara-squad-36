@@ -11,6 +11,10 @@ const MesaSchema = new mongoose.Schema({
     default: 4 
   },
   filial: { ref: "Filial", type: mongoose.Types.ObjectId, required: true },
+  deleted: {
+    type: Boolean,
+    default: false,
+  },
   
 });
 mongoose.model("Mesa", MesaSchema);
