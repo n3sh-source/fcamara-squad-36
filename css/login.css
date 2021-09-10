@@ -67,9 +67,11 @@ img {
   left: 0;
   margin-top: 13px;
   transition: all .3s ease-out;
+  /* width: 300px; */
 }
 
-.label-float input:focus + label {
+.label-float input:focus + label,
+.label-float input:valid + label {
   font-size: 13px;
   margin-top: 0;
   color: #36357E;
