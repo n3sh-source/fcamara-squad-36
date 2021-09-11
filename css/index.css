@@ -10,3 +10,93 @@ Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021
     margin: 0;
     font-family: 'Metropolis-Black', sans-serif;
 }
+
+body{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 100%;
+}
+
+/*Esquerda*/
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.logo{
+    margin-top: 10px;
+    width: 250px;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.mesa{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    width: 500px;
+}
+
+.onda{
+    -webkit-transform: skew(3deg); /* Chrome, Opera */
+    -ms-transform: skew(3deg); /* IE */
+        transform: skew(3deg); /* Padrão */     
+}
+
+/*Direita*/
+.direita{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 100px;
+    color: #737373;
+}
+
+.direita p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.logo-od{
+    width: 200px;
+}
+    /*Botões*/
+.btn1, .btn2{
+    width: 160px;
+    height: 58px;
+    border-radius: 7px;
+    border: none;
+    padding: 16px, 32px;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn1{
+    background-color: #36357E;
+}
+
+.btn2{
+    background-color: #FE4400;
+}
+
+    /*Efeitor de hover*/
+.btn1:hover{
+    background-color: white;
+    color:#36357E;
+    border: 1px solid #36357E;
+}
+
+.btn2:hover{
+    background-color: white;
+    color: #FE4400;
+    border: 1px solid #FE4400;
+}
