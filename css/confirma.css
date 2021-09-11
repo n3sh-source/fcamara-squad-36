@@ -1,0 +1,123 @@
+/*
+Folha de estilos feita por:
+Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021
+*/
+
+/*Formatações Gerais*/
+@charset 'UTF-8';
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Metropolis-Black', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 100%;
+}
+
+/*Section Esquerda*/
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+}
+
+    /*Imagens da section esquerda*/
+.logo{
+    margin-top: 10px;
+    width: 250px;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.chekin{
+    position: absolute;
+    top: 200px;
+    left: 155px;
+    width: 500px;
+}
+
+.onda{
+    -webkit-transform: skew(3deg); /* Chrome, Opera */
+    -ms-transform: skew(3deg); /* IE */
+        transform: skew(3deg); /* Padrão */
+
+        
+}
+
+/*Section Direita*/
+.direita{
+
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-right: 100px;
+
+    color: #737373;
+}
+
+.logo-od{
+    width: 200px;
+}
+
+        /*Botão da section direita*/
+.btn{
+    background-color: #FE4400;
+    width: 162px;
+    height: 50px;
+    border-radius:7px;
+    border: none;
+    padding: 16px;
+    
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover{
+    color: #FE4400;
+    background-color: white;
+    border: 1px solid #FE4400;
+}
+
+.inserir-code{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inserir-code input{
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background:#dddcdc;;
+
+    font-size: 30px;
+}
+
+            /*Remover as setas do input*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

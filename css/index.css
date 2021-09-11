@@ -1,0 +1,12 @@
+/*
+Folha de estilos feita por:
+Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021
+*/
+
+/*Formatações Gerais*/
+@charset 'UTF-8';
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Metropolis-Black', sans-serif;
+}
