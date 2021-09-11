@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,800&display=swap');
+
+body{
+    background-color:#36357E;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#logo-header{
+    width: 20vh;
+    margin-top: 50px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-senha{
+    margin-top: 30px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    
+}
+
+
+
+p{
+    margin-right: 30px;
+}
+
+#email{
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#senha{
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.lembrar-senha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+a{
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+.botao{
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    background: #FE4400;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    padding: 8px 16px;
+}
+
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem-rodape{
+    width: 20vh;
+    margin-top: 100px;
+}
+
+@media  screen and (max-height: 678px) {
+   
+
+    .imagem-rodape{
+        width: 20vh;
+        margin-top: 5px;
+    }
+
+    
+}

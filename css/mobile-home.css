@@ -1,0 +1,22 @@
+body{
+  background-color: #fe4400;
+    
+}
+
+.logo-inicio{
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-branco{
+    width: 20vh;
+}
+
+.logo-fim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
+}
