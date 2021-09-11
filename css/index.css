@@ -116,5 +116,7 @@ img{
         flex-direction: column;
         justify-content: space-around;
         color: #737373;
+
+        flex-shrink: 0;
     }
 }
