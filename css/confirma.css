@@ -47,9 +47,11 @@ img{
 }
 
 .onda{
-    -webkit-transform: skew(2deg); /* Chrome, Opera */
-    -ms-transform: skew(2deg); /* IE */
-        transform: skew(2deg); /* Padrão */
+    -webkit-transform: skew(3deg); /* Chrome, Opera */
+    -ms-transform: skew(3deg); /* IE */
+        transform: skew(3deg); /* Padrão */
+
+        
 }
 
 /*Section Direita*/
