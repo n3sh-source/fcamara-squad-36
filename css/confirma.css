@@ -62,7 +62,7 @@ img{
 
     margin-right: 100px;
 }
-
+        /*Botão da section direita*/
 .btn{
     background-color: #FE4400;
     width: 162px;
@@ -79,4 +79,36 @@ img{
     color: #FE4400;
     background-color: white;
     border: 1px solid #FE4400;
+}
+
+.inserir-code{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inserir-code input{
+    width: 10px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: 1px solid #eee;
+    background:#EFEFEF;;
+}
+
+            /*Remover as setas do input*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
