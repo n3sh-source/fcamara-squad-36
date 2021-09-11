@@ -71,7 +71,7 @@ img{
     border: none;
     padding: 16px;
     
-
+    cursor: pointer;
     color: white;
 }
 
@@ -84,19 +84,17 @@ img{
 .inserir-code{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .inserir-code input{
-    width: 10px;
-    height: 42px;
-    line-height: 1.65;
-    float: left;
-    display: block;
-    padding: 0;
-    margin: 0;
-    padding-left: 20px;
-    border: 1px solid #eee;
-    background:#EFEFEF;;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    background:#dddcdc;;
+
+    font-size: 30px;
 }
 
             /*Remover as setas do input*/
