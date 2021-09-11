@@ -62,3 +62,21 @@ img{
 
     margin-right: 100px;
 }
+
+.btn{
+    background-color: #FE4400;
+    width: 162px;
+    height: 50px;
+    border-radius:7px;
+    border: none;
+    padding: 16px;
+    
+
+    color: white;
+}
+
+.btn:hover{
+    color: #FE4400;
+    background-color: white;
+    border: 1px solid #FE4400;
+}
