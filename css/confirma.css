@@ -33,15 +33,23 @@ img{
     /*Imagens da section esquerda*/
 .logo{
     margin-top: 10px;
-    width: 300px;
+    width: 250px;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 100px;
 }
 
 .chekin{
     position: absolute;
-    top: 88px;
-    left: 30px;
+    top: 200px;
+    left: 155px;
+    width: 500px;
+}
 
-    width: 700px;
+.onda{
+    -webkit-transform: skew(2deg); /* Chrome, Opera */
+    -ms-transform: skew(2deg); /* IE */
+        transform: skew(2deg); /* Padrão */
 }
 
 /*Section Direita*/
@@ -58,6 +66,11 @@ img{
 
     color: #737373;
 }
+
+.logo-od{
+    width: 200px;
+}
+
         /*Botão da section direita*/
 .btn{
     background-color: #FE4400;
