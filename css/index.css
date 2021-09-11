@@ -101,3 +101,20 @@ img{
     color: #FE4400;
     border: 1px solid #FE4400;
 }
+
+/*Responsividade*/
+
+@media screen and (max-width:1200px){
+    .esquerda{
+        display: none;
+    }
+
+    .direita{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #737373;
+    }
+}
