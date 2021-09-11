@@ -78,6 +78,7 @@ img{
     padding: 16px, 32px;
     color: white;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .btn1{
