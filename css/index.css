@@ -116,7 +116,12 @@ img{
         flex-direction: column;
         justify-content: space-around;
         color: #737373;
-
+        margin: auto;
         flex-shrink: 0;
+    }
+
+    .direita p{
+        text-align: center;
+        font-size: 1.3em;
     }
 }

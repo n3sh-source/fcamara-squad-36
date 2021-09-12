@@ -121,3 +121,23 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
+/*Responsividade*/
+
+@media screen and (max-width:1200px){
+    .esquerda{
+        display: none;
+    }
+
+    .direita{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #737373;
+        margin: auto;
+        flex-shrink: 0;
+    }
+}
