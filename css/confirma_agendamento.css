@@ -1,0 +1,107 @@
+/*
+Folha de estilos feita por:
+Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021
+*/
+
+/*Formatações Gerais*/
+@charset 'UTF-8';
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Metropolis-Black', sans-serif;
+}
+
+body{
+    background-color: #36357E;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 100%;
+}
+
+/*Esquerda*/
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.logo{
+    margin-top: 10px;
+    width: 250px;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.sucess{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    width: 650px;
+}
+
+/*Efeito de inversão da Onda*/
+.onda{
+    -webkit-transform: scaleX(-1); /* Chrome, Opera */
+    -ms-transform: scaleX(-1); /* IE */
+        transform: scaleX(-1); /* Padrão */     
+}
+
+/*Direita*/
+.direita{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 100px;
+    color: white;
+}
+
+.direita p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.logo-od{
+    width: 200px;
+}
+
+.btn_sair{
+    width: 80px;
+    height: 45px;
+    color: white;
+    background-color: #FE4400;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width:1200px){
+    .esquerda{
+        display: none;
+    }
+
+    .direita{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        margin: auto;
+        flex-shrink: 0;
+    }
+
+    .direita p{
+        text-align: center;
+        font-size: 1.3em;
+    }
+}
