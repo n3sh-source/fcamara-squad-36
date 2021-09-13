@@ -8,7 +8,6 @@ laranja-fcamara: #fe4400*/
 }
 
 body {
-  /*background-image: */
   background-color: #36357E;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,21 +16,37 @@ body {
 
 .container {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  }
+
+.esquerda {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-top: 30px;
+}
+
+
+.teste{
+  display: flex;
+  flex-direction: column;
+}
+
+.direita {
+  display: flex;
   justify-content: right;
-  width: 95%;
+  width: 50%;
   margin-top: 100px;
 }
 
 .card {
   background-color: #ffffff70;
+  justify-content: right;
+  width: 40%;
   padding: 60px;
   border-radius: 5%;
   box-shadow: 3px 3px 1px 0px #00000060;
-}
-
-img {
-  margin-bottom: 30px;
-  color: #36357E;
 }
 
 .label-float input {

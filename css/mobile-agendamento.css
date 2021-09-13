@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/img/onda-laranja.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 450px;
+
+}
+
+.logo-inicio{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-header{
+width: 20vh;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    
+}
+
+p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.calendario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+input[type='date']{
+ border: none;
+ font-family: 'Montserrat', sans-serif;
+
+
+}
+
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+input[type='button']{
+    background-color: #fe4400;
+    width: 100px;
+    height: 45px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#logo-fim{
+    width: 40vh;
+}
+
+.logo-fim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
