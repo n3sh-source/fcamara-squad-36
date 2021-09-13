@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,800&display=swap%27');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/img/onda-azul);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 450px;
+    background-color: #36357E;
+}
+
+.logo-inicio{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-header{
+    width: 30vh;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    color: #ffffff;
+}
+
+p{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+input{
+    background-color: #FE4400;
+    width: 100px;
+    height: 45px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dia-agendado{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.hora-agendada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-fim{
+    width: 20vh;
+}
+
+#data{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#hora{
+    color: #ffffff;
+}
+
+.logo-fim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
