@@ -1,54 +1,54 @@
 <!DOCTYPE html>
+<!-- 
+Desenvolvido por: 
+Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021 
+-->
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orange Desk</title>
-
+    <link rel="icon" type="image" href="./img/logo-simples">
+    <!-- Link do CSS -->
     <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="/font/Metropolis-Black.otf">
+    <title>Orange Desk</title>
 </head>
 
 <body>
-
-  <div class= 'container'>
-    
-    <div class= 'esquerda'>
-      <div class="teste">
-
-      
-        <div class= "img-mesa">
-          <img src="img/mesa.png">
-        </div>  
-
-        <div class="img-onda">
-          <img src="img/onda-azul.png">
-        </div>
-      </div>
+    <div class="logo">
+        <img src="./img/logo-od-branco.png" alt="" id="logo-header">
     </div>
 
-    <div class= 'direita'>
-      <div class= 'card'>
-      
-        <img src="img/logo-od-laranja.png">
+    <form action="" class="form">
+
+        <div>
+            <label for="email">E-mail</label> 
+            <div>
+               <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
+            </div>
+        </div>
         
-        <div class='label-float'>
-          <input type='email' id='e-mail' paceholder='' required>
-          <label for='e-mail'> E-Mail </label>
+        <div class="label-senha">
+            <label for="password">Senha</label> 
+            <div>
+               <input type="password" name="email" id="email" placeholder="Insira sua senha" required>
+            </div>
         </div>
-      
-        <div class='label-float'>
-          <input type='password' id='senha' paceholder='' required>
-          <label for='senha'> Senha </label>
+        
+        <div>
+            <input type="submit" value="Entrar" class="botao">
         </div>
-      
-        <div class='justify-center'>
-         <button>Login</button>
+
+        <div class="lembrar-senha">
+            <input type="checkbox" name="" id="">
+            <p>Lembrar-me</p>
+            <a href="#">esqueceu sua senha?</a>
         </div>
-      </div>      
+    </form>
+
+    <div class="rodape">
+        <img src="./img/logo-fc-branco.png" alt="" class="imagem-rodape">
     </div>
-  </div>
 
 </body>
 </html>
