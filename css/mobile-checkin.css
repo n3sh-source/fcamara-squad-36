@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/img/onda-laranja.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 450px;  
+
+}
+
+.logo-inicio{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-header{
+width: 20vh;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+
+
+.card{
+    
+    width: 50px;
+    height: 50px;
+    background-color: #EFEFEF;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+    outline-color: #36357E;
+
+}
+
+p{
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+
+#checkin{
+    background-color: #FE4400;
+    width: 125px;
+    height: 45px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logo-fim{
+    width: 30vh;
+}
+
+.logo-fim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    margin-bottom: 15%;
+}
