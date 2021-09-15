@@ -44,14 +44,18 @@ routes.post("/", async (req, res) => {
   }
 });
 routes.put("/:id", async (req, res) => {
-  const reserva = await reservaSchema.findByIdAndUpdate(
-    req.params.id,
-    req.body,
-    {
-      new: true,
-    }
-  );
-  res.send(reserva);
+  try {
+    const reserva = await reservaSchema.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+      }
+    );
+    res.send(reserva);
+  } catch (error) {
+    res.status(500).send({ error });
+  }
 });
 routes.delete("/:id", async (req, res) => {
   try {
@@ -69,7 +73,8 @@ function formataData(data) {
   data = datefns.setHours(data, 0);
   data = datefns.setMinutes(data, 0);
   data = datefns.setSeconds(data, 0);
-  date = datefns.setMilliseconds(data, 0);
+  data = datefns.setMilliseconds(data, 0);
+  return data;
 }
 
 module.exports = routes;
