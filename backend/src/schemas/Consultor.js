@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const crypt = require("bcryptjs");
 
 const ConsultorSchema = new mongoose.Schema({
   nome: {
@@ -16,5 +17,14 @@ const ConsultorSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  senha: {
+    type: String,
+    required: true,
+  },
 });
+
+ConsultorSchema.pre("save", async function () {
+  this.senha = await crypt.hash(this.senha, 10);
+});
+
 mongoose.model("Consultor", ConsultorSchema);
