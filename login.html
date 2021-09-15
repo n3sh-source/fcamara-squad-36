@@ -4,53 +4,64 @@ Desenvolvido por:
 Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021 
 -->
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image" href="./img/logo-simples">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="./img/logo-simples" />
     <!-- Link do CSS -->
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/login.css" />
     <title>Orange Desk</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="logo">
-        <img src="./img/logo-od-branco.png" alt="" id="logo-header">
+      <img src="./img/logo-od-branco.png" alt="" id="logo-header" />
     </div>
 
-    <form action="" class="form">
-
+    <form action="" class="form" id="form">
+      <div>
+        <label for="email">E-mail</label>
         <div>
-            <label for="email">E-mail</label> 
-            <div>
-               <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required>
-            </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Insira seu e-mail"
+            required
+          />
         </div>
-        
-        <div class="label-senha">
-            <label for="password">Senha</label> 
-            <div>
-               <input type="password" name="email" id="email" placeholder="Insira sua senha" required>
-            </div>
-        </div>
-        
-        <div>
-            <a href="index.html">
-                <input type="submit" value="Entrar" class="botao">
-            </a>
-        </div>
+      </div>
 
-        <div class="lembrar-senha">
-            <input type="checkbox" name="" id="">
-            <p>Lembrar-me</p>
-            <a href="#">esqueceu sua senha?</a>
+      <div class="label-senha">
+        <label for="password">Senha</label>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Insira sua senha"
+            required
+          />
         </div>
+      </div>
+
+      <div>
+        <a href="index.html">
+          <input type="submit" value="Entrar" class="botao" />
+        </a>
+      </div>
+
+      <div class="lembrar-senha">
+        <input type="checkbox" name="" id="" />
+        <p>Lembrar-me</p>
+        <a href="#">esqueceu sua senha?</a>
+      </div>
     </form>
 
     <div class="rodape">
-        <img src="./img/logo-fc-branco.png" alt="" class="imagem-rodape">
+      <img src="./img/logo-fc-branco.png" alt="" class="imagem-rodape" />
     </div>
-
-</body>
+  </body>
+  <script src="scripts/login.js"></script>
 </html>
