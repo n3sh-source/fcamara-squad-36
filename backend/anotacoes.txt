@@ -1,0 +1,11 @@
+1- Documentar API no postman
+2- Fazer a tratativas de erros na API 
+3- Iniciar os controllers
+4- Iniciar as Models
+5- Criar regra de negocio
+6- Completar CRUDS da API 
+
+Create | post
+Read   | get
+Uptade | put/patch
+Delete | delete
