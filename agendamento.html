@@ -14,28 +14,52 @@ Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021
     <title>Agendamento</title>
 </head>
 <body>
-    <div class="logo-inicio">
-        <img src="./img/logo-fc-laranja.png" alt="" id="logo-header">
-    </div>
-    
-    <main class="container">
-        <div class="texto">
-            <p>Vamos agendar sua mesa?</p>
-        </div>      
-    </main>
+    <div class="esquerda">
+        <div class="logo">
+            <img src="img/logo-fc-laranja.png" alt="Logo FCamara laranja">
+        </div>
 
-    <div class="calendario">
-        <input type="date" name="" id="">
+        <div>
+            <div class="mesa">
+                <img src="img/agenda.png" alt="Uma pessoa escolhendo uma data">
+            </div>
+
+            <div class="onda">
+                <img src="img/onda-laranja.png" alt="Traços Laranja em formato de onda">
+            </div>
+        </div>
     </div>
 
-    <div class="botao">
-        <a href="reserva.html">
-            <input type="button" value="Agendar" required>
-        </a>    
-    </div>
- 
-    <div class="logo-fim">
-        <img src="./img/agenda.png" alt="" id="logo-fim">
+    <div class="direita">
+        <div class="logo-od">
+                <img src="img/logo-od-laranja.png" alt="Logo Orange desk Laranja">
+        </div>
+
+        <p>
+            Vamos agendar sua mesa? 
+        </p>
+
+        <div>
+            <input type="date">
+        </div>
+
+        <p>
+            Vamos escolher sua mesa?
+        </p>
+
+        <div>
+            <select name="mesas" id="mesas">
+                <option value="1">Mesa 01</option>
+                <option value="2">Mesa 02</option>
+                <option value="3">Mesa 03</option>
+            </select>
+        </div>
+
+        <div>
+            <a href="reserva.html">
+                <input type="submit" value="Agendar" class="btn1">
+            </a>
+        </div>
     </div>
 </body>
 </html>

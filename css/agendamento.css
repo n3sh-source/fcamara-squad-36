@@ -1,81 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,800&display=swap');
+/*
+Folha de estilos feita por:
+Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021
+*/
+
+/*Formatações Gerais*/
+@charset 'UTF-8';
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Metropolis-Black', sans-serif;
+}
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    background-image: url(/img/onda-laranja.png);
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: 450px;
-}
-
-.logo-inicio{
-    margin-top: 20%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 
-#logo-header{
-width: 20vh;
+img{
+    width: 100%;
 }
 
-.texto{
+/*Esquerda*/
+.esquerda{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 30%;
-    margin-bottom: 10%;
-    
+    justify-content: space-between;
+    height: 100vh;
 }
 
-p{
-    margin: 0;
-    font-size: 20px;
-}
-
-.calendario{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo{
     margin-top: 10px;
-
+    width: 250px;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-left: 100px;
 }
 
-input[type='date']{
- border: none;
- font-family: 'Montserrat', sans-serif;
-
-
+.mesa{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    width: 500px;
 }
 
+.onda{
+    -webkit-transform: skew(3deg); /* Chrome, Opera */
+    -ms-transform: skew(3deg); /* IE */
+        transform: skew(3deg); /* Padrão */     
+}
 
-.botao{
+/*Direita*/
+.direita{
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 60px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 100px;
+    color: #737373;
 }
 
-input[type='button']{
-    background-color: #fe4400;
-    width: 100px;
-    height: 45px;
-    color: #ffffff;
+.direita p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.logo-od{
+    width: 200px;
+}
+    /*Botões*/
+.btn1{
+    width: 160px;
+    height: 58px;
+    border-radius: 7px;
     border: none;
-    border-radius: 5px;
+    padding: 16px, 32px;
+    color: white;
+    margin-right: 10px;
     cursor: pointer;
 }
 
-
-#logo-fim{
-    width: 40vh;
+.btn1{
+    background-color: #FE4400;
 }
 
-.logo-fim{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20%;
-    margin-bottom: 5%;
+    /*Efeitor de hover*/
+.btn1:hover{
+    background-color: white;
+    color:#FE4400;
+    border: 1px solid #FE4400;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width:1200px){
+    .esquerda{
+        display: none;
+    }
+
+    .direita{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #737373;
+        margin: auto;
+        flex-shrink: 0;
+    }
+
+    .direita p{
+        text-align: center;
+        font-size: 1.3em;
+    }
 }
