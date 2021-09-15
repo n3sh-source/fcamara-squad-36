@@ -4,62 +4,58 @@ Desenvolvido por:
 Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021 
 -->
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image" href="./img/logo-simples">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="./img/logo-simples" />
     <!-- Link do CSS -->
-    <link rel="stylesheet" href="./css/agendamento.css">
+    <link rel="stylesheet" href="./css/agendamento.css" />
     <title>Agendamento</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="esquerda">
-        <div class="logo">
-            <img src="img/logo-fc-laranja.png" alt="Logo FCamara laranja">
+      <div class="logo">
+        <img src="img/logo-fc-laranja.png" alt="Logo FCamara laranja" />
+      </div>
+
+      <div>
+        <div class="mesa">
+          <img src="img/agenda.png" alt="Uma pessoa escolhendo uma data" />
         </div>
 
-        <div>
-            <div class="mesa">
-                <img src="img/agenda.png" alt="Uma pessoa escolhendo uma data">
-            </div>
-
-            <div class="onda">
-                <img src="img/onda-laranja.png" alt="Traços Laranja em formato de onda">
-            </div>
+        <div class="onda">
+          <img
+            src="img/onda-laranja.png"
+            alt="Traços Laranja em formato de onda"
+          />
         </div>
+      </div>
     </div>
 
     <div class="direita">
-        <div class="logo-od">
-                <img src="img/logo-od-laranja.png" alt="Logo Orange desk Laranja">
-        </div>
+      <div class="logo-od">
+        <img src="img/logo-od-laranja.png" alt="Logo Orange desk Laranja" />
+      </div>
 
-        <p>
-            Vamos agendar sua mesa? 
-        </p>
+      <p>Vamos agendar sua mesa?</p>
 
-        <div>
-            <input type="date">
-        </div>
+      <div>
+        <input type="date" id="data" />
+      </div>
 
-        <p>
-            Vamos escolher sua mesa?
-        </p>
+      <p>Vamos escolher sua mesa?</p>
 
-        <div>
-            <select name="mesas" id="mesas">
-                <option value="1">Mesa 01</option>
-                <option value="2">Mesa 02</option>
-                <option value="3">Mesa 03</option>
-            </select>
-        </div>
+      <div>
+        <select name="mesas" id="mesas"></select>
+      </div>
 
-        <div>
-            <a href="reserva.html">
-                <input type="submit" value="Agendar" class="btn1">
-            </a>
-        </div>
+      <div>
+        <a>
+          <input type="submit" value="Agendar" class="btn1" id="agendar" />
+        </a>
+      </div>
     </div>
-</body>
+  </body>
+  <script src="scripts/agendamento.js"></script>
 </html>
