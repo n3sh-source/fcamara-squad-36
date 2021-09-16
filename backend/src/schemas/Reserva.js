@@ -15,5 +15,18 @@ const ReservaSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  confirmed: {
+    type: Boolean,
+    default: false,
+  },
+  codigo: {
+    type: Number,
+    unique: true,
+  },
+});
+ReservaSchema.pre("save", async function () {
+  const time = String(new Date().getTime());
+  const codigo = time.substring(5, 11);
+  this.codigo = codigo;
 });
 mongoose.model("Reserva", ReservaSchema);

@@ -15,16 +15,6 @@ const MesaSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-  codigo: {
-    type: Number,
-    unique: true,
-  },
-});
-
-MesaSchema.pre("save", async function () {
-  const time = String(new Date().getTime());
-  const codigo = time.substring(5, 11);
-  this.codigo = codigo;
 });
 
 mongoose.model("Mesa", MesaSchema);

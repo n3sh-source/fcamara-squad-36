@@ -52,11 +52,39 @@ module.exports = {
   },
   async delete(id) {
     try {
-      const reservaSchema = mongoose.model("Reserva");
       const reserva = await reservaSchema.findByIdAndUpdate(id, {
         deleted: true,
       });
       return { status: 200, dados: reserva };
+    } catch (error) {
+      return { status: 500, dados: error };
+    }
+  },
+  async confirm(dados) {
+    try {
+      const verificarReserva = await reservaSchema.findOne({
+        codigo: dados.codigo,
+        confirmed: false,
+      });
+
+      if (verificarReserva) {
+        const reserva = await reservaSchema.findOneAndUpdate(
+          {
+            codigo: dados.codigo,
+          },
+          { confirmed: true },
+          { new: true }
+        );
+        return { status: 200, dados: reserva };
+      } else {
+        return {
+          status: 400,
+          dados: {
+            error:
+              "Não existe uma reserva com esse codigo ou a mesma já foi confirmada",
+          },
+        };
+      }
     } catch (error) {
       return { status: 500, dados: error };
     }
