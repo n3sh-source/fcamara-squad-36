@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const express = require("express");
 const routes = express.Router();
 const reservaController = require("../controllers/reserva.controller");
