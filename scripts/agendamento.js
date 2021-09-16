@@ -1,3 +1,6 @@
+const data = new Date().toISOString().slice(0, 10);
+document.getElementById("data").setAttribute("min", data);
+
 fetch("http://localhost:3000/mesa", {
   method: "GET",
   headers: { "Content-Type": "application/json" },
@@ -39,7 +42,8 @@ agendar.addEventListener("click", (evento) => {
         resposta = await resposta.json();
         return alert(resposta.erro);
       }
-      localStorage.setItem("reserva", JSON.stringify(dados));
+      resposta = await resposta.json();
+      localStorage.setItem("reserva", JSON.stringify(resposta));
       alert("Reserva agendada com sucesso");
       window.location.href = "./reserva.html";
     })

@@ -4,58 +4,51 @@ Desenvolvido por:
 Squad 36 - Programa de Formação Etapa Hackathon - 2° Semestre 2021 
 -->
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image" href="./img/logo-simples">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="./img/logo-simples" />
     <!-- Link do CSS -->
-    <link rel="stylesheet" href="css/confirma.css">
+    <link rel="stylesheet" href="css/confirma.css" />
     <title>Confirmação</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="esquerda">
-            <div class="logo">
-                <img src="img/logo-fc-laranja.png" alt="Logo FCamara Laranja">
-            </div>
+      <div class="logo">
+        <img src="img/logo-fc-laranja.png" alt="Logo FCamara Laranja" />
+      </div>
 
-            <div>
-                <div class="chekin">
-                    <img src="img/checkin.png" alt="Desenho de uma mulher fazendo um login">
-                </div>
-                <div class="onda">
-                    <img src="img/onda-laranja.png" alt="Traços laranja em formato de onda">
-                </div>
-            </div>
-            
+      <div>
+        <div class="chekin">
+          <img
+            src="img/checkin.png"
+            alt="Desenho de uma mulher fazendo um login"
+          />
+        </div>
+        <div class="onda">
+          <img
+            src="img/onda-laranja.png"
+            alt="Traços laranja em formato de onda"
+          />
+        </div>
+      </div>
     </section>
 
     <section class="direita">
-        
-            <div class="logo-od">
-                <img src="img/logo-od-laranja.png" alt="Logo Orange Desk Laranja">
-            </div>
+      <div class="logo-od">
+        <img src="img/logo-od-laranja.png" alt="Logo Orange Desk Laranja" />
+      </div>
 
-            <p>
-                Por favor, digite o código da mesa escolhida.
-            </p>
+      <p>Por favor, digite o código da mesa escolhida.</p>
 
-            <div class="inserir-code">
-                <input type="number" name="code" id="1" maxlength="1">
-
-                <input type="number" name="code" id="2" maxlength="1">
-
-                <input type="number" name="code" id="3" maxlength="1">
-
-                <input type="number" name="code" id="4" maxlength="1">
-
-                <input type="number" name="code" id="5" maxlength="1">
-
-                <input type="number" name="code" id="6" maxlength="1">
-            </div>
-            <a href="tela-final.html">
-                <input type="submit" value="CHECK-IN" class="btn">
-            </a>
+      <div class="inserir-code">
+        <input type="number" name="code" id="codigo" maxlength="6" />
+      </div>
+      <a>
+        <input type="submit" value="CHECK-IN" id="confirmar" class="btn" />
+      </a>
     </section>
-</body>
+  </body>
+  <script src="./scripts/confirma.js"></script>
 </html>

@@ -2,6 +2,9 @@ const reserva = JSON.parse(localStorage.getItem("reserva"));
 const resposta = document.getElementById("resposta");
 const diaReserva = reserva.data.substring(0, 10);
 
+const codigo = document.getElementById("codigo");
+codigo.innerHTML = reserva.codigo;
+
 let dia = "";
 const day = new Date(reserva.data).getDay();
 if (day == 0) dia = "Domingo";
